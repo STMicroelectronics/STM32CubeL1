@@ -13,6 +13,10 @@ The **STM32CubeL1 MCU Package** projects are directly running on the STM32L1 ser
 
 In this FW Package, the module **Middlewares/ST/STemWin** is not directly accessible. It must be downloaded from a ST server, the URL is available in a readme.txt file inside the module.
 
+## Release note
+
+Details about the content of this release are available in the release note [here](https://htmlpreview.github.io/?https://github.com/STMicroelectronics/STM32CubeL1/blob/master/Release_Notes.html).
+
 ## Boards available
   * STM32L1
     * [NUCLEO-L152RE](https://www.st.com/en/evaluation-tools/nucleo-l152re.html)
