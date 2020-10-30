@@ -64,13 +64,61 @@
 <div class="col-sm-12 col-lg-8">
 <h1 id="update-history">Update History</h1>
 <div class="collapse">
-<input type="checkbox" id="collapse-section13" checked aria-hidden="true"> <label for="collapse-section13" aria-hidden="true">V1.10.1 / 28-August-2020</label>
+<input type="checkbox" id="collapse-section14" aria-hidden="true"> <label for="collapse-section14" aria-hidden="true">V1.10.2 / 22-October-2020</label>
 <div>
 <h2 id="main-changes">Main Changes</h2>
 <ul>
 <li>Patch release to fix issue in I2C HAL driver</li>
 </ul>
 <h2 id="contents">Contents</h2>
+<ul>
+<li><strong>HAL / LL Drivers</strong> updates
+<ul>
+<li><strong>HAL/LL I2C</strong> driver
+<ul>
+<li>Update to fix hardfault issue with HAL_I2C_Mem_Write_DMA() API:
+<ul>
+<li>Abort the right ongoing DMA transfer when memory write access request operation failed: fix typo “hdmarx” replaced by “hdmatx”</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="components">Components</h2>
+<table>
+<caption><strong>Drivers</strong></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>STM32L1xx HAL</strong></td>
+<td style="text-align: left;"><strong>V1.4.3</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD-3-Clause</a></td>
+<td style="text-align: left;"><a href="Drivers/STM32L1xx_HAL_Driver/Release_Notes.html">release notes</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.40.1 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.29 + ST-Link</li>
+<li>System Workbench for STM32 (SW4STM32) toolchain V2.9.0 + ST-Link</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section13" aria-hidden="true"> <label for="collapse-section13" aria-hidden="true">V1.10.1 / 28-August-2020</label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<ul>
+<li>Patch release to fix issue in I2C HAL driver</li>
+</ul>
+<h2 id="contents-1">Contents</h2>
 <ul>
 <li><strong>HAL / LL Drivers</strong> updates
 <ul>
@@ -83,7 +131,7 @@
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="components">Components</h2>
+<h2 id="components-1">Components</h2>
 <table>
 <caption><strong>Drivers</strong></caption>
 <thead>
@@ -103,7 +151,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.40.1 + ST-Link</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.29 + ST-Link</li>
@@ -114,13 +162,13 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section12" aria-hidden="true"> <label for="collapse-section12" aria-hidden="true">V1.10.0 / 24-June-2020</label>
 <div>
-<h2 id="main-changes-1">Main Changes</h2>
+<h2 id="main-changes-2">Main Changes</h2>
 <ul>
 <li>Add new HAL EXTI driver</li>
 <li>General updates to fix known defects and enhancements implementation</li>
 </ul>
 <h3 id="major-maintenance-release">Major Maintenance release</h3>
-<h2 id="contents-1">Contents</h2>
+<h2 id="contents-2">Contents</h2>
 <ul>
 <li>Add new HAL EXTI driver</li>
 <li><p>General updates to fix known defects and enhancements implementation</p></li>
@@ -355,7 +403,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-1">Components</h2>
+<h2 id="components-2">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -560,7 +608,7 @@
 </ul>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-2">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain <strong>V8.40.1</strong> + ST-Link</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain <strong>V5.29</strong> + ST-Link</li>
@@ -592,9 +640,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section11" aria-hidden="true"> <label for="collapse-section11" aria-hidden="true">V1.9.0 / 05-April-2019</label>
 <div>
-<h2 id="main-changes-2">Main Changes</h2>
+<h2 id="main-changes-3">Main Changes</h2>
 <h3 id="major-maintenance-release-1">Major Maintenance release</h3>
-<h2 id="contents-2">Contents</h2>
+<h2 id="contents-3">Contents</h2>
 <ul>
 <li><strong>CMSIS Core</strong> updates
 <ul>
@@ -647,7 +695,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-2">Components</h2>
+<h2 id="components-3">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -852,7 +900,7 @@
 </ul>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-2">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-3">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.20.2 + ST-Link</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.25 + ST-Link</li>
@@ -884,9 +932,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section10" aria-hidden="true"> <label for="collapse-section10" aria-hidden="true">V1.8.1 / 12-January-2018</label>
 <div>
-<h2 id="main-changes-3">Main Changes</h2>
+<h2 id="main-changes-4">Main Changes</h2>
 <h3 id="patch-release">Patch release</h3>
-<h2 id="contents-3">Contents</h2>
+<h2 id="contents-4">Contents</h2>
 <ul>
 <li><strong>CMSIS Device</strong> updates
 <ul>
@@ -918,7 +966,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-3">Components</h2>
+<h2 id="components-4">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -1117,7 +1165,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-3">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-4">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.80.4 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.24 + ST-LINK</li>
@@ -1150,9 +1198,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section9" aria-hidden="true"> <label for="collapse-section9" aria-hidden="true">V1.8.0 / 25-August-2017</label>
 <div>
-<h2 id="main-changes-4">Main Changes</h2>
+<h2 id="main-changes-5">Main Changes</h2>
 <h3 id="maintenance-release">Maintenance release</h3>
-<h2 id="contents-4">Contents</h2>
+<h2 id="contents-5">Contents</h2>
 <ul>
 <li><p><strong>Projects</strong> updates</p>
 <ul>
@@ -1181,7 +1229,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-4">Components</h2>
+<h2 id="components-5">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -1380,7 +1428,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-4">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-5">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.80.4 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.24 + ST-LINK</li>
@@ -1413,9 +1461,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section8" aria-hidden="true"> <label for="collapse-section8" aria-hidden="true">V1.7.0 / 21-April-2017</label>
 <div>
-<h2 id="main-changes-5">Main Changes</h2>
+<h2 id="main-changes-6">Main Changes</h2>
 <h3 id="maintenance-release-1">Maintenance release</h3>
-<h2 id="contents-5">Contents</h2>
+<h2 id="contents-6">Contents</h2>
 <ul>
 <li><strong>HAL / LL Drivers</strong> updates
 <ul>
@@ -1481,7 +1529,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-5">Components</h2>
+<h2 id="components-6">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -1680,7 +1728,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-5">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-6">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.80.4 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.23 + ST-LINK</li>
@@ -1713,7 +1761,7 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section7" aria-hidden="true"> <label for="collapse-section7" aria-hidden="true">V1.6.0 / 01-July-2016</label>
 <div>
-<h2 id="main-changes-6">Main Changes</h2>
+<h2 id="main-changes-7">Main Changes</h2>
 <h3 id="maintenance-release-2">Maintenance release</h3>
 <ul>
 <li>First official release introducing the STM32Cube LL (Low Layer) APIs for the STM32L1xx serie :
@@ -1721,7 +1769,7 @@
 <li>Low Layer drivers APIs allow performance and memory footprint optimization, with register access level programming</li>
 </ul></li>
 </ul>
-<h2 id="contents-6">Contents</h2>
+<h2 id="contents-7">Contents</h2>
 <ul>
 <li><strong>CMSIS Device</strong> updates
 <ul>
@@ -1776,7 +1824,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-6">Components</h2>
+<h2 id="components-7">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -1975,7 +2023,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-6">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-7">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.60.1 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.20 + ST-LINK</li>
@@ -2008,9 +2056,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section6" aria-hidden="true"> <label for="collapse-section6" aria-hidden="true">V1.5.0 / 04-March-2016</label>
 <div>
-<h2 id="main-changes-7">Main Changes</h2>
+<h2 id="main-changes-8">Main Changes</h2>
 <h3 id="maintenance-release-3">Maintenance release</h3>
-<h2 id="contents-7">Contents</h2>
+<h2 id="contents-8">Contents</h2>
 <ul>
 <li><strong>CMSIS Device</strong> updates
 <ul>
@@ -2073,7 +2121,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-7">Components</h2>
+<h2 id="components-8">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -2272,7 +2320,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-7">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-8">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.20 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.17 + ST-LINK</li>
@@ -2305,13 +2353,13 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true">V1.4.0 / 09-October-2015</label>
 <div>
-<h2 id="main-changes-8">Main Changes</h2>
+<h2 id="main-changes-9">Main Changes</h2>
 <h3 id="maintenance-release-4">Maintenance release</h3>
 <ul>
 <li>Fix known defects and enhancements implementation</li>
 <li>Adding latest version of STM32CubeUpdater (V4.10.0)</li>
 </ul>
-<h2 id="contents-8">Contents</h2>
+<h2 id="contents-9">Contents</h2>
 <ul>
 <li><strong>CMSIS</strong> updates
 <ul>
@@ -2395,7 +2443,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-8">Components</h2>
+<h2 id="components-9">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -2594,7 +2642,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-8">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-9">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.20 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.16 + ST-LINK</li>
@@ -2627,12 +2675,12 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true">V1.3.0 / 03-July-2015</label>
 <div>
-<h2 id="main-changes-9">Main Changes</h2>
+<h2 id="main-changes-10">Main Changes</h2>
 <h3 id="maintenance-release-5">Maintenance release</h3>
 <ul>
 <li>Add support of <strong>System Workbench for STM32</strong> (SW4STM32) toolchain</li>
 </ul>
-<h2 id="contents-9">Contents</h2>
+<h2 id="contents-10">Contents</h2>
 <ul>
 <li><p><strong>Projects</strong> updates</p>
 <ul>
@@ -2661,7 +2709,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-9">Components</h2>
+<h2 id="components-10">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -2860,7 +2908,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-9">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-10">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.20 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.11 + ST-LINK
@@ -2897,12 +2945,12 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section3" aria-hidden="true"> <label for="collapse-section3" aria-hidden="true">V1.2.0 / 31-March-2015</label>
 <div>
-<h2 id="main-changes-10">Main Changes</h2>
+<h2 id="main-changes-11">Main Changes</h2>
 <h3 id="maintenance-release-6">Maintenance release</h3>
 <ul>
 <li>Fix known defects and several enhancements implementation</li>
 </ul>
-<h2 id="contents-10">Contents</h2>
+<h2 id="contents-11">Contents</h2>
 <ul>
 <li><strong>HAL / LL Drivers</strong> updates
 <ul>
@@ -2964,7 +3012,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-10">Components</h2>
+<h2 id="components-11">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -3163,7 +3211,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-10">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-11">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.20 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.11 + ST-LINK
@@ -3198,14 +3246,14 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section2" aria-hidden="true"> <label for="collapse-section2" aria-hidden="true">V1.1.0 / 06-February-2015</label>
 <div>
-<h2 id="main-changes-11">Main Changes</h2>
+<h2 id="main-changes-12">Main Changes</h2>
 <h3 id="maintenance-release-7">Maintenance release</h3>
 <ul>
 <li><strong>Official release for new STM32L1xxxDX (eXtended) devices</strong></li>
 <li>STM32L151xDX, STM32L152xDX and STM32L162xDX</li>
 <li>Fix BSP drivers compilation issue under Linux (done by changing “" by”/" in the include path)</li>
 </ul>
-<h2 id="contents-11">Contents</h2>
+<h2 id="contents-12">Contents</h2>
 <ul>
 <li><p>Projects updates</p>
 <ul>
@@ -3233,7 +3281,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-11">Components</h2>
+<h2 id="components-12">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -3437,9 +3485,9 @@
 <div class="collapse">
 <input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true">V1.0.0 / 05-September-2014</label>
 <div>
-<h2 id="main-changes-12">Main Changes</h2>
+<h2 id="main-changes-13">Main Changes</h2>
 <h3 id="first-official-release-of-stm32cubel1-stm32cube-for-stm32l1-series"><strong>First official release of STM32CubeL1 (STM32Cube for STM32L1 Series)</strong></h3>
-<h2 id="contents-12">Contents</h2>
+<h2 id="contents-13">Contents</h2>
 <ul>
 <li><p>Projects updates</p>
 <ul>
@@ -3467,7 +3515,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="components-12">Components</h2>
+<h2 id="components-13">Components</h2>
 <p>Note: in the tables below, components in <span style="font-weight: bold;">bold</span> have changed since previous release</p>
 <table>
 <caption><strong>Drivers</strong></caption>
@@ -3666,7 +3714,7 @@
 </table>
 <p><br />
 </p>
-<h2 id="development-toolchains-and-compilers-11">Development Toolchains and Compilers</h2>
+<h2 id="development-toolchains-and-compilers-12">Development Toolchains and Compilers</h2>
 <ul>
 <li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.10 + ST-LINK</li>
 <li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.10 + ST-LINK</li>
