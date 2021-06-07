@@ -219,6 +219,7 @@ tsl_user_status_t tsl_user_Exec(void)
   static uint32_t idx_bank = 0;
   static uint32_t config_done = 0;
   tsl_user_status_t status = TSL_USER_STATUS_BUSY;
+  TSL_Status_enum_T retval = TSL_STATUS_ERROR;
 
   /* Configure and start bank acquisition */
   if (!config_done)
@@ -229,11 +230,17 @@ tsl_user_status_t tsl_user_Exec(void)
   }
 
   /* Check end of acquisition (polling mode) and read result */
-  if (TSL_acq_BankWaitEOC() == TSL_STATUS_OK)
+  retval = TSL_acq_BankWaitEOC();
+  if (retval == TSL_STATUS_OK)
   {
     STMSTUDIO_LOCK;
     TSL_acq_BankGetResult(idx_bank, 0, 0);
     STMSTUDIO_UNLOCK;
+    idx_bank++; /* Next bank */
+    config_done = 0;
+  }
+  else if (retval == TSL_STATUS_ERROR)
+  {
     idx_bank++; /* Next bank */
     config_done = 0;
   }

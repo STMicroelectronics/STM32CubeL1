@@ -109,10 +109,5 @@
 			<type>1</type>
 			<location>PARENT-5-PROJECT_LOC/Drivers/STM32L1xx_HAL_Driver/Src/stm32l1xx_ll_gpio.c</location>
 		</link>
-		<link>
-			<name />
-			<type />
-			<location />
-		</link>
 	</linkedResources>
 </projectDescription>
