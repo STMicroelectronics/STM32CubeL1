@@ -74,7 +74,7 @@
    || defined(STM32L151xCA) || defined(STM32L152xCA) || defined(STM32L162xCA)
 
 /******* Devices with FLASH 256K *******/
-#define FLASH_NBPAGES_MAX       1025U /* 1025 pages from page 0 to page 1024U */
+#define FLASH_NBPAGES_MAX       1024U /* 1024 pages from page 0 to page 1023U */
 
 #elif defined(STM32L151xD) || defined(STM32L151xDX) || defined(STM32L152xD) || defined(STM32L152xDX) \
    || defined(STM32L162xD) || defined(STM32L162xDX)
