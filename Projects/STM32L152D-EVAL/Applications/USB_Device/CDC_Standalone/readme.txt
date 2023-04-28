@@ -7,15 +7,14 @@
   * @author  MCD Application Team
   * @brief   Description of the USB Device CDC example.
   ******************************************************************************
-  *@attention
+  * @attention
   *
-  * <h2><center>&copy; Copyright © 2017 STMicroelectronics International N.V. 
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license SLA0044,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        http://www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   @endverbatim
@@ -136,7 +135,7 @@ To run this application, the user can use one of the following configurations:
         Parity: None
         Flow control: None
         Stop bit: 1
-    - In STM32L152D-EVAL RevB CTS pin is connected directly (without jumper) to MCU Reset: HENSE USART cable with 
+    - In STM32L152D-EVAL RevB CTS pin is connected directly (without jumper) to MCU Reset: HENCE USART cable with 
       RX,TX and GND lines ONLY is mandatory.	  
     - For loopback mode test: remove RS232 cable on CN1 and connect directly USART TX and RX pins:
       GPIOA GPIO_PIN_9 and GPIO_PIN_10.
@@ -152,5 +151,5 @@ In order to make the program work, you must do the following :
  - Find out the number of the COM port assigned to the STM32 CDC device
  - Open a serial terminal application and start the communication
 
- * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
+
  */

@@ -7,13 +7,14 @@
   * @author  MCD Application Team
   * @brief   Description of the ADC_ContinuousConversion_TriggerSW_LowPower example.
   ******************************************************************************
+  * @attention
   *
-  * Copyright (c) 2017 STMicroelectronics. All rights reserved.
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                       opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   @endverbatim
@@ -38,7 +39,7 @@ ADC is configured to convert a single channel, in continuous conversion mode,
 from SW trigger.
 ADC low power feature enabled: auto wait and auto power-off.
 These 2 low-power modes can be combined.
-Note: On this STM32 serie, ADC low power feature auto power-off is available,
+Note: On this STM32 series, ADC low power feature auto power-off is available,
       additionally to feature auto wait.
       This is not the case on all STM32 series.
 
@@ -49,7 +50,7 @@ After the first trigger (software start in this example), following conversions
 are not launched successively automatically: the ADC performs 1 conversion
 and remains idle (ADC does not perform any other conversion)
 until conversion data has been processed by user software.
-On this STM32 serie, on which ADC low power feature auto power-off is available,
+On this STM32 series, on which ADC low power feature auto power-off is available,
 ADC is set automatically in mode power-off during idle phase.
 Then, when ADC conversion is required, ADC is set automatically in mode power-on. 
 Note: this is the goal of low power feature auto-wait: to automatically adapt
@@ -107,5 +108,5 @@ In order to make the program work, you must do the following :
  - Rebuild all files and load your image into target memory
  - Run the example
 
- * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
+
  */

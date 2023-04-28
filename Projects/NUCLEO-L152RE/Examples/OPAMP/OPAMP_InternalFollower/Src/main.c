@@ -7,13 +7,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -35,7 +34,7 @@
 #define TIMER_FREQUENCY_HZ             ((uint32_t)1000)    /* Timer frequency (unit: Hz). With SysClk set to 32MHz, timer frequency TIMER_FREQUENCY_HZ range is min=1Hz, max=32.719kHz. */
 #define WAVEFORM_RAMP_12BITS_5SAMPLES  ((uint32_t)   5)    /* Size of waveform Waveform_Ramp_12bits_5samples[] */
 #define ADCCONVERTEDVALUES_BUFFER_SIZE ((uint32_t)  32)    /* Size of array aADCxConvertedValues[] */
-#define ADC_MEASUREMENT_TOLERANCE_LSB  ((uint32_t) 140)    /* ADC measurement tolerance of uncertainty (unit: LSB). Note: higher than theorical tolerance beacause board routing and connectors are not designed for optimal ADC performance. */
+#define ADC_MEASUREMENT_TOLERANCE_LSB  ((uint32_t) 140)    /* ADC measurement tolerance of uncertainty (unit: LSB). Note: higher than theoretical tolerance because board routing and connectors are not designed for optimal ADC performance. */
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
@@ -576,5 +575,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 /**
   * @}
   */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

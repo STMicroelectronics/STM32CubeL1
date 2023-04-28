@@ -24,19 +24,19 @@
             SD detection interrupt mode by calling the function BSP_SD_ITConfig(). The interrupt 
             is generated as an external interrupt whenever the micro SD card is 
             plugged/unplugged in/from the evaluation board. The SD detection interrupt
-            is handeled by calling the function BSP_SD_DetectIT() which is called in the IRQ
+            is handled by calling the function BSP_SD_DetectIT() which is called in the IRQ
             handler file, the user callback is implemented in the function BSP_SD_DetectCallback().
        (++) The function BSP_SD_GetCardInfo() is used to get the micro SD card information 
             which is stored in the structure "HAL_SD_CardInfoTypeDef".
   
   (#) Micro SD card operations
        (++) The micro SD card can be accessed with read/write block(s) operations once 
-            it is reay for access. The access cand be performed whether using the polling 
+            it is ready for access. The access cand be performed whether using the polling 
             mode by calling the functions BSP_SD_ReadBlocks()/BSP_SD_WriteBlocks(), or by DMA 
             transfer using the functions BSP_SD_ReadBlocks_DMA()/BSP_SD_WriteBlocks_DMA()
        (++) The DMA transfer complete is used with interrupt mode. Once the SD transfer
-            is complete, the SD interrupt is handeled using the function BSP_SD_IRQHandler(),
-            the DMA Tx/Rx transfer complete are handeled using the functions
+            is complete, the SD interrupt is handled using the function BSP_SD_IRQHandler(),
+            the DMA Tx/Rx transfer complete are handled using the functions
             BSP_SD_DMA_Tx_IRQHandler()/BSP_SD_DMA_Rx_IRQHandler(). The corresponding user callbacks 
             are implemented by the user at application level. 
        (++) The SD erase block(s) is performed using the function BSP_SD_Erase() with specifying
@@ -47,13 +47,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */ 
@@ -591,5 +590,4 @@ HAL_StatusTypeDef SD_DMAConfigTx(SD_HandleTypeDef *hsd)
   * @}
   */ 
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 

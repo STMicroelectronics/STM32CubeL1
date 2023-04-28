@@ -1,0 +1,8 @@
+# This File contains the files and folder list to automatically delete inside the <baseline>/Firmware folder when publishing the stm32cube
+# Note that .git, .gitignore and .gitmodules are already deleted by the FWdelivery.py
+
+#For instance
+#Remove a folder and a file :
+#Drivers/CMSIS/Device/ST/STM32L4xx/Release_Notes.html
+#Drivers/CMSIS/Device/ST/STM32L4xx
+Drivers/BSP/STM32L152_EVAL

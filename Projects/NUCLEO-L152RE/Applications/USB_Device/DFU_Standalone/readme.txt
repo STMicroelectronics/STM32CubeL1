@@ -7,15 +7,14 @@
   * @author  MCD Application Team
   * @brief   Description of the USB DFU example.
   ******************************************************************************
-  *@attention
+  * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license SLA0044,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        http://www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   @endverbatim
@@ -90,7 +89,7 @@ For more details about the STM32Cube USB Device library, please refer to UM1734
 It is possible to fine tune needed USB Device features by modifying defines values in USBD configuration
 file “usbd_conf.h” available under the project includes directory, in a way to fit the application
 requirements, such as:
- - USBD_DFU_APP_DEFAULT_ADD, specifing the address from where user's application will be downloaded.
+ - USBD_DFU_APP_DEFAULT_ADD, specifying the address from where user's application will be downloaded.
 
 Device's end address is the end address of the flash memory and it is dependent on the device in use.
 
@@ -106,7 +105,7 @@ Device's end address is the end address of the flash memory and it is dependent 
   - USB_Device/DFU_Standalone/Src/main.c                  Main program
   - USB_Device/DFU_Standalone/Src/usbd_conf.c             USB Device library callbacks and MSP
   - USB_Device/DFU_Standalone/Src/usbd_dfu_flash.c        Internal flash memory management
-  - USB_Device/DFU_Standalone/Src/usbd_desc.c             USBD descriptors and string formating method
+  - USB_Device/DFU_Standalone/Src/usbd_desc.c             USBD descriptors and string formatting method
   - USB_Device/DFU_Standalone/Src/system_stm32l1xx.c      STM32L1xx system source file
 
 @par Hardware and Software environment
@@ -143,5 +142,5 @@ In order to make the program work, you must do the following :
    - To run the downloaded application, execute the command "leave the DFU mode"
      or simply reset the board.
 
- * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
+
  */

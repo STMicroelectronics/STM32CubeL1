@@ -10,13 +10,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -100,7 +99,7 @@ static uint32_t ubAdcGrpRegularSequenceConvCount = 0; /* Variable set into ADC i
 /* Variables for ADC conversion data computation to physical values */
 __IO uint16_t uhADCxConvertedData_VoltageGPIO_mVolt = 0;        /* Value of voltage on GPIO pin (on which is mapped ADC channel) calculated from ADC conversion data (unit: mV) */
 __IO uint16_t uhADCxConvertedData_VrefInt_mVolt = 0;            /* Value of internal voltage reference VrefInt calculated from ADC conversion data (unit: mV) */
-__IO  int16_t hADCxConvertedData_Temperature_DegreeCelsius = 0; /* Value of temperature calculated from ADC conversion data (unit: degree Celcius) */
+__IO  int16_t hADCxConvertedData_Temperature_DegreeCelsius = 0; /* Value of temperature calculated from ADC conversion data (unit: degree Celsius) */
 __IO uint16_t uhADCxConvertedData_VrefAnalog_mVolt = 0;         /* Value of analog reference voltage (Vref+), connected to analog voltage supply Vdda, calculated from ADC conversion data (unit: mV) */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -283,7 +282,7 @@ void Configure_DMA(void)
   *           the setting of these parameters is bypassed without error
   *           reporting:
   *           it can be the expected behavior in case of recall of this 
-  *           function to update only a few parameters (which update fullfills
+  *           function to update only a few parameters (which update fulfills
   *           the ADC state).
   *           Otherwise, it is up to the user to set the appropriate error 
   *           reporting in user application.
@@ -321,7 +320,7 @@ void Configure_ADC(void)
   
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, in order to be compliant with other STM32 series          */
   /*       and to show the best practice usages, ADC state is checked.        */
@@ -358,7 +357,7 @@ void Configure_ADC(void)
   
   /*## Configuration of ADC hierarchical scope: multimode ####################*/
   
-    /* Note: Feature not available on this STM32 serie */ 
+    /* Note: Feature not available on this STM32 series */ 
     
   }
   
@@ -367,7 +366,7 @@ void Configure_ADC(void)
   
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, ADC state is checked anyway with standard requirements    */
   /*       (refer to description of this function).                           */
@@ -400,7 +399,7 @@ void Configure_ADC(void)
   
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, ADC state is checked anyway with standard requirements    */
   /*       (refer to description of this function).                           */
@@ -424,7 +423,7 @@ void Configure_ADC(void)
     // LL_ADC_REG_SetFlagEndOfConversion(ADC1, LL_ADC_REG_FLAG_EOC_SEQUENCE_CONV);
     
     /* Set ADC group regular sequencer */
-    /* Note: On this STM32 serie, ADC group regular sequencer is              */
+    /* Note: On this STM32 series, ADC group regular sequencer is              */
     /*       fully configurable: sequencer length and each rank               */
     /*       affectation to a channel are configurable.                       */
     /*       Refer to description of function                                 */
@@ -447,7 +446,7 @@ void Configure_ADC(void)
   
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, ADC state is checked anyway with standard requirements    */
   /*       (refer to description of this function).                           */
@@ -467,7 +466,7 @@ void Configure_ADC(void)
     // LL_ADC_INJ_SetTrigAuto(ADC1, LL_ADC_INJ_TRIG_INDEPENDENT);
     
     /* Set ADC group injected sequencer */
-    /* Note: On this STM32 serie, ADC group injected sequencer is             */
+    /* Note: On this STM32 series, ADC group injected sequencer is             */
     /*       fully configurable: sequencer length and each rank               */
     /*       affectation to a channel are configurable.                       */
     /*       Refer to description of function                                 */
@@ -488,7 +487,7 @@ void Configure_ADC(void)
   
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, in order to be compliant with other STM32 series          */
   /*       and to show the best practice usages, ADC state is checked.        */
@@ -516,7 +515,7 @@ void Configure_ADC(void)
   
   /*## Configuration of ADC transversal scope: analog watchdog ###############*/
   
-  /* Note: On this STM32 serie, there is only 1 analog watchdog available.    */
+  /* Note: On this STM32 series, there is only 1 analog watchdog available.    */
   
   /* Set ADC analog watchdog: channels to be monitored */
   // LL_ADC_SetAnalogWDMonitChannels(ADC1, LL_ADC_AWD_DISABLE);
@@ -528,13 +527,13 @@ void Configure_ADC(void)
   
   /*## Configuration of ADC transversal scope: oversampling ##################*/
   
-  /* Note: Feature not available on this STM32 serie */
+  /* Note: Feature not available on this STM32 series */
   
   
   /*## Configuration of ADC interruptions ####################################*/
   /* Enable interruption ADC group regular end of unitary conversion          */
   /* or end of sequence conversions.                                          */
-  /* Note: On this STM32 serie, ADC group regular end of conversion           */
+  /* Note: On this STM32 series, ADC group regular end of conversion           */
   /*       must be selected among end of unitary conversion                   */
   /*       or end of sequence conversions.                                    */
   /*       Refer to function "LL_ADC_REG_SetFlagEndOfConversion()".           */
@@ -573,7 +572,7 @@ void Activate_ADC(void)
   #endif /* USE_TIMEOUT */
   
   /* Enable ADC clock (conversion clock) */
-  /* On this STM32 serie, ADC is using a dedicated asynchronous clock         */
+  /* On this STM32 series, ADC is using a dedicated asynchronous clock         */
   /* derived from HSI oscillator.                                             */
   /* Activate HSI if not already activated */
   if (LL_RCC_HSI_IsReady() == 0)
@@ -605,7 +604,7 @@ void Activate_ADC(void)
   
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, in order to be compliant with other STM32 series          */
   /*       and to show the best practice usages, ADC state is checked.        */
@@ -828,7 +827,7 @@ void UserButton_Callback(void)
   /* Start ADC group regular conversion */
   /* Note: Hardware constraint (refer to description of the functions         */
   /*       below):                                                            */
-  /*       On this STM32 serie, setting of these features are not             */
+  /*       On this STM32 series, setting of these features are not             */
   /*       conditioned to ADC state.                                          */
   /*       However, in order to be compliant with other STM32 series          */
   /*       and to show the best practice usages, ADC state is checked.        */
@@ -944,5 +943,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 /**
   * @}
   */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -7,13 +7,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright © 2017 STMicroelectronics International N.V. 
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under Ultimate Liberty license SLA0044,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        http://www.st.com/SLA0044
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -461,7 +460,7 @@ be configured to output push-pull low (excepted for Linear sensors).
   */
 #define TSLPRM_TIMER_FREQ (32)
 
-/** Delay for transfering charges from Cx to Cs capacitor and then discharge Cx
+/** Delay for transferring charges from Cx to Cs capacitor and then discharge Cx
    (range=0..65535)
    - 0: no delay (it takes about 2.8µs for a CT cycle)
    - (1..65535): delay (in µs) = 0.75 * TSLPRM_DELAY_TRANSFER + 1
@@ -515,5 +514,3 @@ be configured to output push-pull low (excepted for Linear sensors).
 #include "tsl_acq_stm32l1xx_sw.h" /* Select this file if software acquisition is used */
 
 #endif /* __TSL_CONF_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -7,13 +7,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2017 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */ 
@@ -336,13 +335,13 @@ void BSP_LCD_GLASS_ClearBar(uint32_t BarId)
 
 /**
   * @brief Setting bar on LCD, writes bar value in LCD frame buffer 
-  * @param BarLevel: specifies the LCD GLASS Batery Level.
+  * @param BarLevel: specifies the LCD GLASS Battery Level.
   *     This parameter can be one of the following values:
-  *     @arg BATTERYLEVEL_OFF: LCD GLASS Batery Empty
-  *     @arg BATTERYLEVEL_1_4: LCD GLASS Batery 1/4 Full
-  *     @arg BATTERYLEVEL_1_2: LCD GLASS Batery 1/2 Full
-  *     @arg BATTERYLEVEL_3_4: LCD GLASS Batery 3/4 Full
-  *     @arg BATTERYLEVEL_FULL: LCD GLASS Batery Full
+  *     @arg BATTERYLEVEL_OFF: LCD GLASS Battery Empty
+  *     @arg BATTERYLEVEL_1_4: LCD GLASS Battery 1/4 Full
+  *     @arg BATTERYLEVEL_1_2: LCD GLASS Battery 1/2 Full
+  *     @arg BATTERYLEVEL_3_4: LCD GLASS Battery 3/4 Full
+  *     @arg BATTERYLEVEL_FULL: LCD GLASS Battery Full
   * @retval None
   */
 void BSP_LCD_GLASS_BarLevelConfig(uint8_t BarLevel)
@@ -435,7 +434,7 @@ void BSP_LCD_GLASS_WriteChar(uint8_t* ch, uint8_t Point, uint8_t Column, uint8_t
   *          This parameter  can be one of the following values:
   *              @arg DOUBLEPOINT_OFF: No colon to add in back of char.
   *              @arg DOUBLEPOINT_ON: Add an colon in back of char.
-  * @param  Position: Position in the LCD of the caracter to write.
+  * @param  Position: Position in the LCD of the character to write.
   *                   This parameter can be any value in DigitPosition_Typedef.
   * @retval None
   */
@@ -730,7 +729,7 @@ static void LCD_MspInit(LCD_HandleTypeDef *hlcd)
   /*##-1- Enable PWR  peripheral Clock #######################################*/
   __HAL_RCC_PWR_CLK_ENABLE();
   
-  /*##-2- Configue LSE as RTC clock soucre ###################################*/ 
+  /*##-2- Configure LSE as RTC clock source ###################################*/ 
   oscinitstruct.OscillatorType  = RCC_OSCILLATORTYPE_LSE;
   oscinitstruct.PLL.PLLState    = RCC_PLL_NONE;
   oscinitstruct.LSEState        = RCC_LSE_ON;
@@ -932,5 +931,4 @@ static void Convert(uint8_t* Char, Point_Typedef Point, DoublePoint_Typedef Doub
   * @}
   */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
