@@ -6,3 +6,19 @@
 	path = Drivers/STM32L1xx_HAL_Driver
 	url = https://github.com/STMicroelectronics/stm32l1xx_hal_driver.git
 	branch = master
+[submodule "Drivers/BSP/STM32L1xx_Nucleo"]
+	path = Drivers/BSP/STM32L1xx_Nucleo
+	url = https://github.com/STMicroelectronics/stm32l1xx-nucleo-bsp.git
+	branch = main
+[submodule "Drivers/BSP/STM32L152D_EVAL"]
+	path = Drivers/BSP/STM32L152D_EVAL
+	url = https://github.com/STMicroelectronics/stm32l152d-eval-bsp.git
+	branch = main
+[submodule "Drivers/BSP/STM32L152C-Discovery"]
+	path = Drivers/BSP/STM32L152C-Discovery
+	url = https://github.com/STMicroelectronics/32l152cdiscovery-bsp.git
+	branch = main
+[submodule "Drivers/BSP/STM32L100C-Discovery"]
+	path = Drivers/BSP/STM32L100C-Discovery
+	url = https://github.com/STMicroelectronics/32l100cdiscovery-bsp.git
+	branch = main
